@@ -13,7 +13,7 @@ for ($intervalo = 1; $intervalo <= $aleatorio; $intervalo++){
     }
 }
 
-///Condição para saber se é primo ou não segundo o número de divisores
+///Condição para saber se $aleatório é primo ou não segundo o número de divisores
 
 if ($divisores != 2){
     echo 'O número '.$aleatorio.' não é primo';
