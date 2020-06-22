@@ -7,16 +7,16 @@ $divisores = 0;
 
 ///Descobrir número de divisores pra saber se o $aleatório é primo
 
-for ($intervalo = 2; $intervalo = 30; $intervalo++){
+for ($intervalo = 1; $intervalo <= $aleatorio; $intervalo++){
     if ($aleatorio % $intervalo == 0){
         $divisores ++;
     }
 }
 
-///Condição pra afirmar se o $aleatório é primo ou não
+///Condição para saber se é primo ou não segundo o número de divisores
 
-if($divisores != 2){
-    echo $aleatorio. ' não é primo!';
+if ($divisores != 2){
+    echo 'O número '.$aleatorio.' não é primo';
 }else{
-    echo $aleatorio. ' é primo!';
+    echo 'O número '.$aleatorio.' é primo';
 }
