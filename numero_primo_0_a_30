@@ -1,0 +1,22 @@
+///Faça uma página PHP que sorteia um número aleatório entre 1 e 30 e verifique se ele é primo. 
+
+
+<?php
+$aleatorio = rand(2, 30);
+$divisores = 0;
+
+///Descobrir número de divisores pra saber se o $aleatório é primo
+
+for ($intervalo = 2; $intervalo = 30; $intervalo++){
+    if ($aleatorio % $intervalo == 0){
+        $divisores ++;
+    }
+}
+
+///Condição pra afirmar se o $aleatório é primo ou não
+
+if($divisores != 2){
+    echo $aleatorio. ' não é primo!';
+}else{
+    echo $aleatorio. ' é primo!';
+}
