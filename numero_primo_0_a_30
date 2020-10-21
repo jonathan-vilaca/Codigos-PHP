@@ -1,6 +1,3 @@
-///Faça uma página PHP que sorteia um número aleatório entre 1 e 30 e verifique se ele é primo. 
-
-
 <?php
 $aleatorio = rand(2, 30);
 $divisores = 0;
